@@ -18,11 +18,11 @@ public class MyDateUtil {
 
 	public static String getMonthStr(Calendar cal) {
 		int month = cal.get(Calendar.MONTH) + 1;
-		return month > 10 ? "" + month : "0" + month;
+		return month > 9 ? "" + month : "0" + month;
 	}
 
 	public static String getDayStr(Calendar cal) {
-		return cal.get(Calendar.DATE) > 10 ? "" + cal.get(Calendar.DATE) : "0"
+		return cal.get(Calendar.DATE) > 9 ? "" + cal.get(Calendar.DATE) : "0"
 				+ cal.get(Calendar.DATE);
 	}
 
